@@ -214,22 +214,4 @@ The cron schedule (`0 0 * * *` — midnight WAT daily) and the ingestor architec
 
 ---
 
-## Deployment
-
-### Frontend (Vercel / Netlify)
-
-```bash
-cd client
-npm run build
-# Deploy the dist/ folder
-```
-
-### Backend (Railway / Render / Fly.io)
-
-Set environment variables on your hosting provider:
-- `DATABASE_URL` — PostgreSQL connection string
-- `JWT_SECRET` — Random secret (min 32 chars)
-- `NODE_ENV=production`
-
----
 
